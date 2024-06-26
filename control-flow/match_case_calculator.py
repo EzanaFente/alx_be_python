@@ -3,17 +3,17 @@ num2=int(input("Enter the second number: "))
 opera=input("Choose the operation (+, -, *, /): ")
 match opera:
     case "+":
-        add = num1 + num2
-        print(f"The result is {add}.")
+        result = num1 + num2
+        print(f"The result is {int(result)}.")
     case "-":
-        sub = num1 - num2
-        print(f"The result is {sub}.")
+        result = num1 - num2
+        print(f"The result is {int(result)}.")
     case "*":
-        mul = num1 * num2
-        print(f"The result is {mul}.")
+        result = num1 * num2
+        print(f"The result is {int(result)}.")
     case "/":
         if num2!=0:
-            divi = num1 / num2
-            print(f"The result is {divi}.")
+            result = num1 / num2
+            print(f"The result is {int(result)}.")
         else:
             print("Cannot divide by zero.")
