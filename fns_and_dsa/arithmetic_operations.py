@@ -17,3 +17,5 @@ def perform_operation(num1, num2, operation):
                 return "Error: Cannot divide by zero."
         case _:
             return "Error: Invalid operation"
+if __name__ == "__main__":
+   perform_operation(num1, num2, operation)
