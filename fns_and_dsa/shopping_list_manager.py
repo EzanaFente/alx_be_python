@@ -11,14 +11,14 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            new = input("Insert the item you want to add: ")
+            new = input("Enter the item to add: ")
             shopping_list.append(new)
         elif choice == '2':
-            new = input("Insert the item you want to remove: ")
+            new = input("Enter the item to remove: ")
             if new in shopping_list:
                 shopping_list.remove(new)
             else:
-                print("Itrm is not in the list")
+                print("Item is not in the list")
         elif choice == '3':
             for i in range(len(shopping_list)):
                 print(shopping_list[i])
