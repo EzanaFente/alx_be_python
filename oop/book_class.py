@@ -15,3 +15,5 @@ class Book:
         
 aaa = Book("1984", "George Orwell", 1949)
 print(aaa)
+print(repr(aaa))
+del aaa
