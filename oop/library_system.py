@@ -22,4 +22,10 @@ class Library:
     def add_book(self, book):
         self.books.append(book)
     def list_books(self):
-        print(self.books)
+        for book in self.books:
+            if isinstance(book, EBook):
+                print(f"Title: {book.title}, Author: {book.author}, File Size: {book.file_size}KB")
+            elif isinstance(book, PrintBook):
+                print(f"Title: {book.title}, Author: {book.author}, Page Count: {book.page_count}")
+            else:
+                print(f"Title: {book.title}, Author: {book.author}")
