@@ -12,8 +12,3 @@ class Book:
         
     def __del__(self):
         print(f"Deleting {self.title}")
-        
-aaa = Book("1984", "George Orwell", 1949)
-print(aaa)
-print(repr(aaa))
-del aaa
